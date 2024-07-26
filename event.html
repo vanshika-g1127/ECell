@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    flex: 1 1 calc(45% - 40px);
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container .title {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+body {
+            background-image: url('path-to-your-background-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff; /* Default text color */
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        .nav {
+            background-color: rgba(248, 249, 250, 0.9); /* Slightly transparent background */
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-link {
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #0056b3;
+        }
+        .nav-link.active {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+        }
+        .section {
+            padding: 60px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        #home {
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #about {
+            background: rgba(0, 0, 0, 0.8); /* Darker background for readability */
+            padding: 60px 0;
+        }
+
+
+
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Titles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+
+  
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.LcElAmWiHFQyCH3j4SsCOgHaFj?rs=1&pid=ImgDetMain" alt="E-Summit 1">
+            <div class="title">E-Summit 1</div>
+        </div>
+        <div class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.tWJBwTsb8Sc3s_1ZMzihvgHaHa?rs=1&pid=ImgDetMain" alt="E-Summit 2">
+            <div class="title">E-Summit 2</div>
+        </div>
+        <div class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.jecC9mDhIJGVb_azfULXpQAAAA?rs=1&pid=ImgDetMain" alt="E-Summit 3">
+            <div class="title">E-Summit 3</div>
+        </div>
+        <div class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.kPjkXmLHZ1vClJwKvI8VpAHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="E-Summit 4">
+            <div class="title">E-Summit 4</div>
+        </div>
+    </div>
+</body>
+</html>
