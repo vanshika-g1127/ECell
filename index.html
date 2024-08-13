@@ -39,9 +39,40 @@
             color: #ffffff;
         }
         #home {
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+    position: relative;
+    background: url('finding-diverse-college-community-3-steps.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the rgba values for a different shade of grey */
+    z-index: -1;
+}
+
+#home h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+
         #about {
             background: rgba(0, 0, 0, 0.8); /* Darker background for readability */
             padding: 60px 0;
@@ -107,208 +138,137 @@
             background-color: #0056b3;
         }
         .navbar {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-.navbar-nav .nav-link {
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-.navbar-nav .nav-link:hover {
-    color: #e0e0e0;
-}
-.navbar-nav .nav-link.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-}
-
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0e0e0;
+        }
+        .navbar-nav .nav-link.active {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#home" style="color: #ffffff;">E-Cell Sharda University</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home" style="color: #ffffff;">E-Cell Sharda University</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#initiatives">Initiatives</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="event.html">Events</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#startups">Startups</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="team.html">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ca">CA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact us</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#initiatives">Initiatives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#startups">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ca">CA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-    <section id="home" class="section">
-        <div class="container text-center">
-            <h1 class="main-heading">Welcome to E-Cell Sharda University</h1>
-            <p class="text-slide">Experience the transformation from idea to reality at Sharda University's E-cell.</p>
-        </div>
-    </section>
+    <section id="home">
+      <h1>E-Cell Sharda University</h1>
+      <p>The path to entrepreneurship starts here</p>
+  </section>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-header">About Us</h2>
-            <div class="section-content">
-                <p>Explore Entrepreneurship Cell, Sharda University, your ultimate launchpad for innovation. Immerse yourself in dynamic workshops, thought-provoking speaker sessions, and high-stakes competitions to fuel your entrepreneurial journey. With personalized guidance, crucial funding opportunities, and a robust network, we democratize entrepreneurship within our vibrant ecosystem. Whether you're an aspiring enthusiast or a seasoned entrepreneur, dive into our diverse array of events, including Conclaves, Expert Talks, Industry-defined Problems, Campaigns, Pitching Sessions, and Peer-to-Peer Interactions. Embrace personal and collaborative growth with us at Sharda University's E-Cell. Join us and unlock your entrepreneurial potential today.</p>
-                
-                <h3>Our Aim:</h3>
-                <p>Our Entrepreneurship Cell is your launchpad for success. We offer resources, support, and networking opportunities, promoting entrepreneurship as a viable career. Join us to cultivate innovation, access funding, and turn your ideas into thriving ventures!</p>
-
-                <h3>Our Vision:</h3>
-                <p>Cultivates a dynamic startup culture, championing innovative ideas among students. We empower individuals with skills and support to transform ideas into thriving businesses, fostering innovation through mentorship, networking, and funding opportunities. Join us to inspire the next generation of entrepreneurs and drive positive societal impact.</p>
-
-                <h3>Our Mission:</h3>
-                <p>We will serve as a cornerstone for aspiring student entrepreneurs, offering essential support and guidance. With a focus on fostering an entrepreneurial culture, we will prepare students for real-world challenges, equipping them with skills through mentorship and practical experiences. Our aim is to cultivate an entrepreneurial spirit among students, exposing them to India's thriving startup ecosystem and inspiring them to embark on their entrepreneurial journeys.</p>
-
-                <h3>Our Motto:</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Ideation:</h4>
-                        <p>Embark on entrepreneurial ideation at Sharda University's E-cell. We merge creativity and problem-solving, crafting innovative concepts that meet market needs. Thrive on exploration, experimentation, and collaboration as you refine ideas iteratively for execution.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Execution:</h4>
-                        <p>Experience the transformation from idea to reality at Sharda University's E-cell. Precision, resource allocation, and strategic implementation drive tangible outcomes. Adaptability, resilience, and attention to detail guide entrepreneurs through complexities. It's a journey of continuous learning, monitoring, and the realization of impactful visions.</p>
+            <h2 class="section-header text-center">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <div class="section-content">
+                        <p>Explore Entrepreneurship Cell, Sharda University, your ultimate launchpad for innovation. Immerse yourself in dynamic workshops, thought-provoking speaker sessions, and high-stakes competitions to fuel your entrepreneurial journey. With personalized guidance, crucial funding opportunities, and a robust network, we democratize entrepreneurship within our vibrant ecosystem. Whether you're an aspiring enthusiast or a seasoned entrepreneur, dive into our diverse array of events, including Conclaves, Expert Talks, Industry-defined Problems, Campaigns, Pitching Sessions, and Peer-to-Peer Interactions. Embrace personal and collaborative growth with us at Sharda University's E-Cell. Join us and unlock your entrepreneurial potential today.</p>
                     </div>
                 </div>
-
-                <h3>What We Do?</h3>
-                <p>Entrepreneurship Cell Sharda University, democratizes entrepreneurship, reaching all within our vibrant ecosystem. From aspiring enthusiasts to seasoned entrepreneurs, we offer a diverse array of events: Conclaves, Expert Talks, Industry-defined Problems, Campaigns, Pitching Sessions, and Peer-to-Peer Interactions. Embrace personal and collaborative avenues for growth with us.</p>
-
-                <h3>Why You Should Join Us?</h3>
-                <ul class="list-unstyled">
-                    <li><strong>Diverse Events:</strong> Participate in a variety of events tailored to different aspects of entrepreneurship.</li>
-                    <li><strong>Unleash Potential:</strong> Unlock and harness your entrepreneurial potential with our resources and support.</li>
-                    <li><strong>Tailored Mentorship:</strong> Receive personalized guidance from experienced mentors.</li>
-                    <li><strong>Funding Opportunities:</strong> Access crucial funding to help bring your ideas to life.</li>
-                    <li><strong>Networking:</strong> Build valuable connections within our robust network.</li>
-                    <li><strong>Collaborative Growth:</strong> Embrace both personal and collaborative growth through our initiatives.</li>
-                </ul>
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="section-content text-left">
+                        <h3>Our Aim:</h3>
+                        <p>Our Entrepreneurship Cell is your launchpad for success. We offer resources, support, and networking opportunities, promoting entrepreneurship as a viable career. Join us to cultivate innovation, access funding, and turn your ideas into thriving ventures!</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Workshops and Training:</strong> Skill-building sessions for aspiring entrepreneurs.</li>
+                            <li><strong>Mentorship Programs:</strong> Guidance from experienced entrepreneurs and industry experts.</li>
+                            <li><strong>Networking Opportunities:</strong> Connect with fellow students, alumni, and professionals.</li>
+                            <li><strong>Competitions and Challenges:</strong> Platform to pitch ideas and win funding.</li>
+                            <li><strong>Incubation Support:</strong> Resources to develop and launch startup ventures.</li>
+                            <li><strong>Access to Funding:</strong> Opportunities to secure financial support for projects.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="initiatives" class="section">
         <div class="container">
-            <h2 class="main-heading">Our Initiatives</h2>
+            <h2 class="section-header">Initiatives</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="esummit.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">E-Summit: Fuel Your Entrepreneurial Spark!</h5>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Speaker Sessions</h3>
+                            <p class="card-text">Engage with industry experts sharing their experiences, insights, and valuable advice in a vibrant setting that fosters learning and growth.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="workshops.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Unleash Your Inner Innovator: E-Cell Workshops</h5>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Workshops</h3>
+                            <p class="card-text">Participate in hands-on workshops designed to equip you with essential entrepreneurial skills and knowledge, led by professionals and experienced entrepreneurs.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="bootcamp.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">E-Cell Bootcamp: Launch Your Startup Like a Pro!</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="experttalks.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">E-Cell Expert Talks: Learn from the Masters!</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="podcasts.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Dive into the World of Innovation: E-Cell Podcasts</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="startupcarnival.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">E-Cell Startup Carnival: Unleash Your Inner Innovator!</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <a href="mentorship.html" class="stretched-link"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">E-Cell Mentorship Program: Empower Your Entrepreneurial Journey</h5>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pitching Events</h3>
+                            <p class="card-text">Showcase your startup ideas and business models in front of investors and industry leaders, receiving constructive feedback and potential funding opportunities.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     
 
-    <section id="startups" class="section">
-        <div class="container text-center">
-            <h2 class="main-heading">Startups</h2>
-            <p class="text-slide">Information about startups.</p>
-        </div>
-    </section>
-    <section id="ca" class="section">
-        <div class="container text-center">
-            <h2 class="main-heading">CA</h2>
-            <p class="text-slide">Details about CA.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container text-center">
-            <h2 class="main-heading">Contact Us</h2>
-            <p class="text-slide">contact details</p>
-        </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Z1cF8R3vqVfKA+Kp2kZpLaPgkO7PSmB67st4Mylazs1ZrWw/4ys2l/M4fgTpLrxX" crossorigin="anonymous"></script>
 </body>
 </html>
