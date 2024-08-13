@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 100);
     });
 });
+
+document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('subscribe-email').value;
+    alert(`Thank you for subscribing with ${email}`);
+});
