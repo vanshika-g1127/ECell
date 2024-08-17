@@ -242,6 +242,30 @@
 .social-icon:hover {
     color: #007bff; /* Optional: Change color on hover */
 }
+.navbar {
+    background-color: #333; /* Optional: Background color for the navbar */
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.navbar-brand img {
+    height: 40px; /* Height of the logos in the navbar */
+}
+
+.nav-item img {
+    height: 40px; /* Height of the logo at the right end */
+}
+
+.nav-item:last-child {
+    margin-left: 20px; /* Space before the last image */
+}
+
+.nav-item:last-child img {
+    margin-left: auto;
+}
 
     </style>
 </head>
@@ -249,13 +273,16 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home" style="color: #ffffff;">E-Cell Sharda University</a>
-
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="C:\Users\Dell\Desktop\Ecell sharda\ECell\sharda.png" alt="Logo 1" style="height: 40px; margin-right: 10px;">
+                <img src="C:\Users\Dell\Desktop\Ecell sharda\ECell\a+.jpeg" alt="Logo 2" style="height: 40px;">
+            </div>
+    
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -268,20 +295,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#events">Events</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#startups">Startups</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ca">CA</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact us</a>
+                        <img src="logo3.png" alt="Logo 3" style="height: 40px; margin-left: 20px;">
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!-- Include Font Awesome for social media icons -->
 <!-- Include Font Awesome for social media icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
