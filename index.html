@@ -39,39 +39,38 @@
             color: #ffffff;
         }
         #home {
-    position: relative;
-    background: url('TEAM.JPG') no-repeat center center/cover;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    overflow: hidden;
-}
+            position: relative;
+            background: url('TEAM.JPG') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+        }
 
-#home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(35, 40, 46, 0.481); /* Adjust the rgba values for a different shade of grey */
-    z-index: -1;
-}
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(35, 40, 46, 0.481); /* Adjust the rgba values for a different shade of grey */
+            z-index: -1;
+        }
 
-#home h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-}
+        #home h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
 
-#home p {
-    font-size: 1.5rem;
-}
-
+        #home p {
+            font-size: 1.5rem;
+        }
 
         #about {
             background: rgba(0, 0, 0, 0.8); /* Darker background for readability */
@@ -182,13 +181,10 @@
                         <a class="nav-link" href="#initiatives">Initiatives</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="event.html">Events</a>
+                        <a class="nav-link" href="#events">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#startups">Startups</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#ca">CA</a>
@@ -202,9 +198,9 @@
     </nav>
 
     <section id="home">
-      <h1>E-Cell Sharda University</h1>
-      <p>The path to entrepreneurship starts here</p>
-  </section>
+        <h1>E-Cell Sharda University</h1>
+        <p>The path to entrepreneurship starts here</p>
+    </section>
 
     <section id="about" class="section">
         <div class="container">
@@ -221,15 +217,15 @@
                 <div class="col-md-5">
                     <div class="section-content text-left">
                         <h3>Our Aim:</h3>
-                        <p>Our Entrepreneurship Cell is your launchpad for success. We offer resources, support, and networking opportunities, promoting entrepreneurship as a viable career. Join us to cultivate innovation, access funding, and turn your ideas into thriving ventures!</p>
+                        <p>Our Entrepreneurship Cell is your launchpad for success. We offer resources, support, and networking opportunities, promoting entrepreneurship as a viable career. Join us to cultivate innovation and achieve your entrepreneurial dreams.</p>
+                        <h3>Mission:</h3>
                         <ul class="list-unstyled">
-                            <li><strong>Workshops and Training:</strong> Skill-building sessions for aspiring entrepreneurs.</li>
-                            <li><strong>Mentorship Programs:</strong> Guidance from experienced entrepreneurs and industry experts.</li>
-                            <li><strong>Networking Opportunities:</strong> Connect with fellow students, alumni, and professionals.</li>
-                            <li><strong>Competitions and Challenges:</strong> Platform to pitch ideas and win funding.</li>
-                            <li><strong>Incubation Support:</strong> Resources to develop and launch startup ventures.</li>
-                            <li><strong>Access to Funding:</strong> Opportunities to secure financial support for projects.</li>
+                            <li>Foster innovation and entrepreneurship within our community.</li>
+                            <li>Provide resources, mentoring, and networking opportunities to aspiring entrepreneurs.</li>
+                            <li>Create a vibrant ecosystem that supports startups from idea to execution.</li>
                         </ul>
+                        <h3>Vision:</h3>
+                        <p>Our vision is to be a leading hub for entrepreneurship, empowering individuals to turn their ideas into successful ventures and contributing to economic growth and societal well-being.</p>
                     </div>
                 </div>
             </div>
@@ -241,34 +237,156 @@
             <h2 class="section-header">Initiatives</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Speaker Sessions</h3>
-                            <p class="card-text">Engage with industry experts sharing their experiences, insights, and valuable advice in a vibrant setting that fosters learning and growth.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovation Challenge</h5>
+                            <p class="card-text">A competition to inspire innovative solutions to real-world problems, offering participants a platform to showcase their ideas.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Workshops</h3>
-                            <p class="card-text">Participate in hands-on workshops designed to equip you with essential entrepreneurial skills and knowledge, led by professionals and experienced entrepreneurs.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Startup Incubator</h5>
+                            <p class="card-text">An incubation program providing startups with mentorship, resources, and funding opportunities to accelerate their growth.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Pitching Events</h3>
-                            <p class="card-text">Showcase your startup ideas and business models in front of investors and industry leaders, receiving constructive feedback and potential funding opportunities.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrepreneurship Bootcamp</h5>
+                            <p class="card-text">An intensive program designed to equip aspiring entrepreneurs with the skills and knowledge to launch successful ventures.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Z1cF8R3vqVfKA+Kp2kZpLaPgkO7PSmB67st4Mylazs1ZrWw/4ys2l/M4fgTpLrxX" crossorigin="anonymous"></script>
+    <section id="events" class="section">
+        <div class="container">
+            <h2 class="section-header">Events</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Annual Startup Conclave</h5>
+                            <p class="card-text">Join us for our flagship event, bringing together innovators, investors, and entrepreneurs for a day of networking and knowledge sharing.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pitch Perfect</h5>
+                            <p class="card-text">Test your pitching skills and stand a chance to secure funding for your startup in front of a panel of esteemed judges.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hackathon</h5>
+                            <p class="card-text">Collaborate, innovate, and create solutions in our 48-hour hackathon, where your coding skills will be put to the ultimate test.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="startups" class="section">
+        <div class="container">
+            <h2 class="section-header">Startups</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Startup 1</h5>
+                            <p class="card-text">A brief description of Startup 1's mission, achievements, and future plans.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Startup 2</h5>
+                            <p class="card-text">A brief description of Startup 2's mission, achievements, and future plans.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Startup 3</h5>
+                            <p class="card-text">A brief description of Startup 3's mission, achievements, and future plans.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ca" class="section">
+        <div class="container">
+            <h2 class="section-header">Campus Ambassador Program</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Become a Campus Ambassador</h5>
+                            <p class="card-text">Join our team as a Campus Ambassador and help spread the spirit of entrepreneurship at your campus. Enjoy exclusive benefits and opportunities to grow your network and skills.</p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-header">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Location</h3>
+                    <p>Sharda University, Greater Noida, Uttar Pradesh, India</p>
+                    <h3>Email</h3>
+                    <p>ecell@sharda.ac.in</p>
+                    <h3>Phone</h3>
+                    <p>+91 12345 67890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+p7B1KtZoy54MKck8B7QybR2qgQ/8LWcQJxPCjI1a5C0F4/aAXaNOlcHH+6hKa" crossorigin="anonymous"></script>
 </body>
 </html>
