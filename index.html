@@ -160,6 +160,57 @@
             color: #007bff;
             border-bottom: 2px solid #007bff;
         }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+}
+
+.images img {
+    width: 33.33%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section-content h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.section-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -204,36 +255,28 @@
         <p>The path to entrepreneurship starts here</p>
     </section>
 
+    
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-header text-center">About Us</h2>
             <div class="row align-items-center">
-                <div class="col-md-5 text-center">
-                    <div class="section-content">
-                        <p>Explore Entrepreneurship Cell, Sharda University, your ultimate launchpad for innovation. Immerse yourself in dynamic workshops, thought-provoking speaker sessions, and high-stakes competitions to fuel your entrepreneurial journey. With personalized guidance, crucial funding opportunities, and a robust network, we democratize entrepreneurship within our vibrant ecosystem. Whether you're an aspiring enthusiast or a seasoned entrepreneur, dive into our diverse array of events, including Conclaves, Expert Talks, Industry-defined Problems, Campaigns, Pitching Sessions, and Peer-to-Peer Interactions. Embrace personal and collaborative growth with us at Sharda University's E-Cell. Join us and unlock your entrepreneurial potential today.</p>
+                <div class="col-md-7">
+                    <div class="images d-flex">
+                        <img src="image1.jpg" alt="E-Cell Activity 1" class="img-fluid">
+                        <img src="image2.jpg" alt="E-Cell Activity 2" class="img-fluid">
+                        <img src="image3.jpg" alt="E-Cell Activity 3" class="img-fluid">
                     </div>
-                </div>
-                <div class="col-md-2 d-flex justify-content-center align-items-center">
-                    <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-5">
                     <div class="section-content text-left">
-                        <h3>Our Aim:</h3>
-                        <p>Our Entrepreneurship Cell is your launchpad for success. We offer resources, support, and networking opportunities, promoting entrepreneurship as a viable career. Join us to cultivate innovation and achieve your entrepreneurial dreams.</p>
-                        <h3>Mission:</h3>
-                        <ul class="list-unstyled">
-                            <li>Foster innovation and entrepreneurship within our community.</li>
-                            <li>Provide resources, mentoring, and networking opportunities to aspiring entrepreneurs.</li>
-                            <li>Create a vibrant ecosystem that supports startups from idea to execution.</li>
-                        </ul>
-                        <h3>Vision:</h3>
-                        <p>Our vision is to be a leading hub for entrepreneurship, empowering individuals to turn their ideas into successful ventures and contributing to economic growth and societal well-being.</p>
+                        <h3>About <strong>E-Cell</strong></h3>
+                        <p>A student organization committed to cultivating entrepreneurial spirit and facilitating the transition of concepts into viable businesses.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    
     <section id="initiatives" class="section">
         <div class="container">
             <h2 class="section-header">Initiatives</h2>
